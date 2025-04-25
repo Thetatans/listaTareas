@@ -34,10 +34,10 @@ public class TareasServlet extends HttpServlet {
         if (pathInfo == null || "/".equals(pathInfo)) {
             
          // Listar tareas
-            request.getRequestDispatcher("/WEB-INF/views/listarTareas.jsp").forward(request, response);
+            request.getRequestDispatcher("listarTareas.jsp").forward(request, response);
         } else if ("/nueva".equals(pathInfo)) {
             // Formulario nueva tarea
-            request.getRequestDispatcher("/WEB-INF/views/nuevaTarea.jsp").forward(request, response);
+            request.getRequestDispatcher("nuevaTarea.jsp").forward(request, response);
         } else if (pathInfo.startsWith("/completar/")) {
             // Completar tarea
             
